@@ -1,0 +1,54 @@
+{
+    "identifier": "novov.hardwrap",
+    "name": "Hard Wrap",
+    "organization": "novov",
+    "description": "Wraps text using line breaks at a specified length.",
+    "version": "0.1.1",
+    "categories": ["commands"],
+    "bugs": "https://github.com/mirnovov/hardwrap/issues",
+    "repository": "https://github.com/hardwrap/colourpicker",
+    "license": "MIT",
+    
+    "main": "main.js",
+    
+    "entitlements": {
+        
+    },
+    
+    "commands": {
+        "editor": [
+            {
+                "title": "Hard Wrap...",
+                "command": "novov.hardwrap.wrap",
+                "when": "editorHasSelection",
+                "shortcut": "cmd-#"
+            }
+        ]
+    },
+    
+    "config": [
+        {
+            "key": "novov.hardwrap.breakat",
+            "title": "Break lines at",
+            "type": "number",
+            "description": "The maximum length of a line before it is wrapped.",
+            "min": 10,
+            "max": 1000,
+            "default": 80
+        },
+        {
+            "key": "novov.hardwrap.remove",
+            "title": "Remove existing newline characters",
+            "description": "Empty lines will still be maintained.",
+            "type": "boolean",
+            "default": true
+        },
+        {
+            "key": "novov.hardwrap.leading",
+            "title": "Auto-detect indents and # comments",
+            "type": "boolean",
+            "default": true
+        }
+    ]
+    
+}
