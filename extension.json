@@ -6,7 +6,7 @@
     "version": "0.1.1",
     "categories": ["commands"],
     "bugs": "https://github.com/mirnovov/hardwrap/issues",
-    "repository": "https://github.com/hardwrap/colourpicker",
+    "repository": "https://github.com/mirnovov/hardwrap",
     "license": "MIT",
     
     "main": "main.js",
