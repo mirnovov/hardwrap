@@ -3,7 +3,7 @@
     "name": "Hard Wrap",
     "organization": "novov",
     "description": "Wraps text using line breaks at a specified length.",
-    "version": "0.1.1",
+    "version": "0.2",
     "categories": ["commands"],
     "bugs": "https://github.com/mirnovov/hardwrap/issues",
     "repository": "https://github.com/mirnovov/hardwrap",
@@ -48,6 +48,12 @@
             "title": "Auto-detect indents and # comments",
             "type": "boolean",
             "default": true
+        },
+        {
+            "key": "novov.hardwrap.countleading",
+            "title": "Count indents as part of line width",
+            "type": "boolean",
+            "default": false
         }
     ]
     
