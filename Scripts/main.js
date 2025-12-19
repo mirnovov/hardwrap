@@ -32,9 +32,12 @@ function hardWrap(text, max, editor = null) {
             max -= (leading.replace("\t", space)).length
         }  
     } 
-        
+    
+    var endsWith = text.endsWith("\n");
+    
     if(nova.config.get("novov.hardwrap.remove")) {
         text = text.replaceAll(/\n(?!\n)/g," ").replaceAll(/\n\s?/g,"\n\n");
+        if (endsWith) text += "\n";
     }
     
     while (true) {
@@ -57,7 +60,10 @@ function hardWrap(text, max, editor = null) {
     }
     
     if (nova.config.get("novov.hardwrap.leading") && leading != "") {
-        return leading + result.replaceAll("\n","\n" + leading);
+        if (endsWith) result = result.slice(0, -1);
+        
+        result = leading + result.replaceAll("\n","\n" + leading);
+        if (endsWith) result += "\n";
     }
     
     return result;

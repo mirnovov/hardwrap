@@ -3,7 +3,7 @@
     "name": "Hard Wrap",
     "organization": "novov",
     "description": "Wraps text using line breaks at a specified length.",
-    "version": "0.2",
+    "version": "0.3",
     "categories": ["commands"],
     "bugs": "https://github.com/mirnovov/hardwrap/issues",
     "repository": "https://github.com/mirnovov/hardwrap",

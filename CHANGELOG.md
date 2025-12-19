@@ -3,3 +3,4 @@
 * **Version 0.2**:
 	* Add option to count leading as part of line width
 	* Do minor optimisations
+* **Version 0.3**: Improve handling of final line break
